@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #e8eff7;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2e5d93;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #5a5a5a;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.85rem;
+    border: 1px solid #b2c5e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2e5d93;
+    background-color: #f2f7fb;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #2e5d93;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.85rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #244a74;
+    transform: scale(1.02);
+}
+
+table {
+    width: 100%;
+    margin-top: 2.5rem;
+    border-collapse: collapse;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #d0dae8;
+}
+
+th {
+    background-color: #e8eff7;
+    color: #2e5d93;
+    font-weight: 600;
+    text-align: center;
+}
+
+td {
+    color: #4a4a4a;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 0.85rem;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    th, td {
+        padding: 0.75rem;
+    }
+
+    button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
